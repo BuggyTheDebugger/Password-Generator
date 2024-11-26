@@ -1,34 +1,26 @@
-# Password Generator Script
+# Secure FTP Server with Fail2Ban
 
 ## Description
-This script is a versatile password generator designed to help users create, manage, and secure memorable yet robust passwords. It features options for customization, password encryption, and even a training mode to improve password memorization skills.
+This script automates the setup and management of a secure FTP server using vsftpd, combined with Fail2Ban to protect against brute-force attacks. It includes options for user management, configuration of FTP permissions, and real-time IP banning.
 
 ## Features
-- Generate single or multiple passwords with configurable length and complexity.
-- Save and encrypt passwords locally using GPG (AES256 encryption).
-- Review saved passwords securely.
-- Customize password rules (length, inclusion of uppercase, numbers, and special characters).
-- Practice memorizing passwords with the training mode.
-- Automatically installs required dependencies for seamless execution.
+- Install and configure vsftpd with SSL/TLS support.
+- Set up Fail2Ban to secure the FTP server against unauthorized access.
+- Manage FTP users (add, delete, modify permissions).
+- Monitor and unban IPs with Fail2Ban.
 
 ## Requirements
-- A Linux environment with the following tools installed:
-  - `gpg`
-  - `curl`
-- An active internet connection (required to download the dictionary on the first run).
+- A Linux system (Debian-based distributions recommended).
+- Root privileges for script execution.
 
- ## Installation :
- - git clone https://github.com/BuggyTheDebugger/password-generator
- - cd password-generator
- - chmod +x password_generator.sh
- - sudo ./password_generator.sh
+## Installation
+```bash
+git clone https://github.com/BuggyTheDebugger/ftp-server-setup.git
+cd ftp-server-setup
+chmod +x ftp-server.sh
+sudo ./ftp-server.sh
+```
 
 ## Usage
-1. **Run the script:**
-   ```bash
-   sudo  ./generateur-mots-de-passes.txt
-
-## Notes
-
-- Ensure you have the necessary permissions to execute the script (chmod +x ).
-- To decrypt saved passwords, you will need the same GPG setup as used during encryption.
+```bash
+sudo ./ftp-server.sh
