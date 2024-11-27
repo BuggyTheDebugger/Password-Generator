@@ -3,7 +3,7 @@
 # ===============================
 # Memorable Password Generator
 # ===============================
-# Author: [BuggyTheDebugger]
+# Author: [CodeD-Roger]
 # Description: Interactive script to generate, save, and manage secure passwords.
 # Version: 1.1 (Correction for multiple password generation)
 
